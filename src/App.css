@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+  font-family: 'Arial',sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+.app{
+  max-width: 800px;
+  margin:auto;
+  padding: 20px;
+}
+
+header{
+  text-align: center;
+  padding: 40px 0;
+}
+.profile-pic{
+  width: 150px;
+  border-radius: 50%;
+}
+section{
+  margin-bottom: 50px;
+}
+h2{
+  color: #007acc;
+  margin-bottom: 10px;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #007acc;
+}
+
+footer{
+  text-align: center;
+  margin-top:50px ;
+  font: size 0.9em;
+  color: #555;
+}

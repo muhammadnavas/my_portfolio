@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Navas - AI/ML Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg {background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);}
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold text-gray-800">Muhammad Navas</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+                    <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-600">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <div class="px-4 py-2 space-y-2">
+                <a href="#home" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+                <a href="#projects" class="block py-2 text-gray-600 hover:text-blue-600">Projects</a>
+                <a href="#skills" class="block py-2 text-gray-600 hover:text-blue-600">Skills</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-12"><!-- Profile Image on the Left -->
+<div class="mb-8 md:mb-0 flex-shrink-0 relative">
+    <div class="w-64 h-80 md:w-72 md:h-96 rounded-3xl overflow-hidden border-4 border-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-2xl transform scale-105 transition-transform duration-300 hover:scale-115">
+        <img src="./src/assets/profile.jpg" alt="Muhammad Navas"
+             class="w-full h-full object-cover">
+    </div>
+</div>
+
+
+            <!-- Text and Buttons on the Right -->
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Muhammad Navas</h1>
+                <p class="text-xl md:text-2xl mb-6 opacity-90">
+                    Innovative AI & ML Student
+                </p>
+                <p class="text-lg mb-8 opacity-80 max-w-xl">
+                    Building Scalable, Intelligent Systems to Create Real-World Impact
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://github.com/muhammadnavas" target="_blank"
+                       class="inline-flex items-center px-5 py-2 bg-white text-gray-800 rounded-full font-medium shadow-md hover:bg-gray-100 transition-all duration-200">
+                        <i class="fab fa-github mr-2"></i>GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/muhammadnavas" target="_blank"
+                       class="inline-flex items-center px-5 py-2 bg-blue-600 text-white rounded-full font-medium shadow-md hover:bg-blue-500 transition-all duration-200">
+                        <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                        Passionate AI/ML Developer
+                    </h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        I'm a Computer Science student specializing in AI & ML at CMR Institute of Technology, 
+                        Bangalore, with a strong 9.4 CGPA. I'm passionate about building intelligent systems 
+                        that solve real-world problems and create meaningful impact.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        My expertise spans across full-stack development, machine learning, and IoT systems. 
+                        I've successfully built projects serving 1000+ users and participated in multiple 
+                        hackathons, always striving to learn and implement cutting-edge technologies.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Education</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <h5 class="font-medium text-gray-800">
+                                Bachelor of Engineering, Computer Science (AI & ML)
+                            </h5>
+                            <p class="text-gray-600">CMR Institute of Technology, Bangalore</p>
+                            <p class="text-sm text-gray-500">2023-2027 • CGPA: 9.4</p>
+                        </div>
+                        <div>
+                            <h5 class="font-medium text-gray-800">PCMB</h5>
+                            <p class="text-gray-600">KGN Pre-University, Dakshina Kannada</p>
+                            <p class="text-sm text-gray-500">2020-2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Programming Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Java</span>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">C</span>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <div class="text-green-600 text-3xl mb-4">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">AI & Machine Learning</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">OpenCV</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">NLP</span>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Gemini LLM</span>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <div class="text-purple-600 text-3xl mb-4">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Web Development</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">MERN Stack</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Flask</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">REST API</span>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <div class="text-red-600 text-3xl mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Database & Cloud</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Google Cloud</span>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <div class="text-yellow-600 text-3xl mb-4">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Tools & Others</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Git & GitHub</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Arduino</span>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">IoT</span>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <div class="text-indigo-600 text-3xl mb-4">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Specialization</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Agentic AI</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Quick Learner</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+                <p class="text-gray-300 mt-4 max-w-2xl mx-auto">
+                    I'm always open to discussing new opportunities, interesting projects, 
+                    or just having a conversation about technology and AI.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-blue-400 text-3xl mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Email</h3>
+                    <a href="mailto:navasns0409@gmail.com" 
+                       class="text-gray-300 hover:text-white transition-colors">
+                        navasns0409@gmail.com
+                    </a>
+                </div>
+                <div class="p-6">
+                    <div class="text-blue-400 text-3xl mb-4">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">GitHub</h3>
+                    <a href="https://github.com/muhammadnavas" target="_blank"
+                       class="text-gray-300 hover:text-white transition-colors">
+                        github.com/navasns0409
+                    </a>
+                </div>
+                <div class="p-6">
+                    <div class="text-blue-400 text-3xl mb-4">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
+                    <a href="https://linkedin.com/in/muhammadnavas" target="_blank"
+                       class="text-gray-300 hover:text-white transition-colors">
+                        linkedin.com/in/navasns0409
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Muhammad Navas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
