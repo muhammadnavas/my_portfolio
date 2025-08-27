@@ -26,7 +26,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const projects = [
     {
         title: "Notezy.online - Student Resource Hub",
-        description: "MERN-based web portal for sharing VTU notes and study materials with categorized uploads, serving 1000+ active students.",
+        description: "MERN-based web portal for sharing VTU notes and study materials with categorized uploads, serving 5000+ active students.",
         technologies: ["JavaScript", "MERN", "MongoDB", "Google Cloud", "Gemini LLM"],
         icon: "fas fa-graduation-cap",
         color: "blue",
