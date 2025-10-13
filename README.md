@@ -1,7 +1,5 @@
 # My Portfolio (Vite + React)
 
-![Portfolio Banner](https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=300&q=80)
-
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://your-portfolio-url.com)
 [![React](https://img.shields.io/badge/React-18.0.0-blue)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.0.0-purple)](https://vitejs.dev/)
@@ -18,14 +16,6 @@ A modern, responsive personal portfolio website built with Vite and ReactJS to s
 - 📊 Coding profiles (GitHub, LeetCode)
 - 📬 Contact section with social links
 - ✨ Smooth navigation and interactive UI
-
-## Screenshots
-
-### Desktop View
-![Desktop Screenshot](https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500&q=80)
-
-### Mobile View
-<img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=600&q=80" alt="Mobile Screenshot" width="300">
 
 ## Tech Stack
 
@@ -123,7 +113,7 @@ Give a ⭐️ if this project helped you!
 
 👤 **Muhammad Navas**
 
-- Website: [Portfolio](https://your-portfolio-url.com)
+- Website: [Portfolio](https://navasprofile.vercel.app/)
 - GitHub: [@muhammadnavas](https://github.com/muhammadnavas)
 - LinkedIn: [@muhammadnavas](https://www.linkedin.com/in/muhammadnavas/)
 - Email: navasns0409@gmail.com
