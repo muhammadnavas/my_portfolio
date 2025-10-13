@@ -1,6 +1,6 @@
 # My Portfolio (Vite + React)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://your-portfolio-url.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://navasprofile.vercel.app/)
 [![React](https://img.shields.io/badge/React-18.0.0-blue)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.0.0-purple)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.0.0-38B2AC)](https://tailwindcss.com/)
