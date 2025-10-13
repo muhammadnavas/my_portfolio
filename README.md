@@ -80,10 +80,6 @@ yarn build
 ### Deploy to Vercel
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/muhammadnavas/my-portfolio)
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/muhammadnavas/my-portfolio/issues).
-
 ## Show your support
 
 Give a ⭐️ if this project helped you!
