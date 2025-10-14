@@ -120,12 +120,12 @@ function createProjectCard(project) {
     <div class="flex gap-2 mt-3 flex-wrap">
     ${project.github ? `
         <a href="${project.github}" target="_blank"
-           class="inline-flex items-center px-2.5 py-1 bg-blue-100 text-blue-800 text-sm rounded-full hover:bg-blue-200 transition-colors duration-150">
+           class="inline-flex items-center px-2.5 py-1 bg-pink-100 text-[#831843] text-sm rounded-full hover:bg-pink-200 transition-colors duration-150">
            <i class="fab fa-github mr-1"></i> GitHub
         </a>` : ''}
     ${project.website ? `
         <a href="${project.website}" target="_blank"
-           class="inline-flex items-center px-2.5 py-1 bg-blue-100 text-blue-800 text-sm rounded-full hover:bg-blue-200 transition-colors duration-150">
+           class="inline-flex items-center px-2.5 py-1 bg-pink-100 text-[#831843] text-sm rounded-full hover:bg-pink-200 transition-colors duration-150">
            <i class="fas fa-globe mr-1"></i> Website
         </a>` : ''}
 </div>
@@ -264,7 +264,7 @@ function handleContactForm() {
 function addBackToTop() {
     const backToTop = document.createElement('button');
     backToTop.innerHTML = '<i class="fas fa-chevron-up"></i>';
-    backToTop.className = 'fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:bg-blue-700';
+    backToTop.className = 'fixed bottom-8 right-8 bg-gradient-to-r from-[#831843] to-[#f472b6] text-white w-12 h-12 rounded-full shadow-lg opacity-0 pointer-events-none transition-all duration-300 hover:scale-110';
     backToTop.id = 'back-to-top';
     
     document.body.appendChild(backToTop);

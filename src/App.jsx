@@ -1,13 +1,22 @@
-import React from "react";
 import './App.css';
 import ProfilePic from './assets/profile.jpg';
+import TextType from './components/TextType';
 
 function App(){
   return(
     <div className="app">
       <header>
         <img src={ProfilePic} alt="Profile" className="profile-pic"/>
-        <h1>Muhammad Navas</h1>
+        <h1>
+          <TextType 
+            text={["Muhammad Navas", "AI & ML Developer", "Full-Stack Engineer"]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="|"
+            loop={true}
+          />
+        </h1>
         <p>AI | ML | MERN | Python</p>
       </header>
       <section id="about">
