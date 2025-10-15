@@ -72,7 +72,7 @@ const projects = [
     {
         title: "AI-Based NLP to SQL Converter",
         description: "Advanced system that converts natural language queries into SQL commands using NLP techniques.",
-        technologies: ["Python", "NLP", "SQL", "Machine Learning"],
+        technologies: ["Python", "NLP", "SQL", "AI"],
         icon: "fas fa-database",
         color: "indigo",
         github: "https://github.com/muhammadnavas/AI_Schema_Selector.git",
