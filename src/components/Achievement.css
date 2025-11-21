@@ -1,18 +1,48 @@
-.achievement-item {
-  display: flex;
-  align-items: flex-start;
+
+.achievements-title {
+  text-align: center;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
+.achievements-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.achievement-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  min-width: 320px;
+  max-width: 420px;
+  transition: box-shadow 0.2s;
+}
+.achievement-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+}
 .certificate-img {
-  width: 220px;
+  width: 120px;
   height: auto;
   margin-right: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 .achievement-details {
-  max-width: 600px;
+  flex: 1;
 }
-#achievements h2 {
-  margin-bottom: 1.5rem;
+.leetcode-card {
+  background: linear-gradient(90deg, #f7b267 0%, #f4845f 100%);
+  color: #fff;
+  position: relative;
+}
+.leetcode-icon {
+  font-size: 3rem;
+  margin-right: 1.5rem;
+}
+#achievements {
+  margin: 3rem 0;
 }
