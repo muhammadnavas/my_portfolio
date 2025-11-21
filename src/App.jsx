@@ -1,11 +1,13 @@
 import './App.css';
 import ProfilePic from './assets/profile.jpg';
 import Achievement from './components/Achievement';
+import Navbar from './components/Navbar';
 import TextType from './components/TextType';
 
 function App(){
   return(
     <div className="app">
+      <Navbar />
       <header>
         <img src={ProfilePic} alt="Profile" className="profile-pic"/>
         <h1>
