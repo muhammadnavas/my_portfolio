@@ -1,0 +1,18 @@
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.certificate-img {
+  width: 220px;
+  height: auto;
+  margin-right: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.achievement-details {
+  max-width: 600px;
+}
+#achievements h2 {
+  margin-bottom: 1.5rem;
+}

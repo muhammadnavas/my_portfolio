@@ -1,5 +1,6 @@
 import './App.css';
 import ProfilePic from './assets/profile.jpg';
+import Achievement from './components/Achievement';
 import TextType from './components/TextType';
 
 function App(){
@@ -21,8 +22,9 @@ function App(){
       </header>
       <section id="about">
         <h2>About Me</h2>
-        <p>I am a passionate developer who loves building web applications...</p>
-      </section>c
+          <p>I am a passionate developer who loves building web applications...</p>
+        </section>
+      <Achievement />
       <section id="projects">
         <h2>Projects</h2>
         <ul>
