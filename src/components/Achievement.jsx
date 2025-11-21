@@ -1,5 +1,6 @@
 import './Achievement.css';
-import CertificateImg from './assets/certificate.jpg';
+// Update the import to use the correct certificate image file. If the file is not present, use profile.jpg as a placeholder.
+import CertificateImg from './assets/profile.jpg';
 
 const Achievement = () => (
   <section id="achievements">

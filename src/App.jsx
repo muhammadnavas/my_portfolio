@@ -26,6 +26,16 @@ function App(){
         <h2>About Me</h2>
           <p>I am a passionate developer who loves building web applications...</p>
         </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>AI & ML</li>
+          <li>MERN Stack</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+      </section>
       <Achievement />
       <section id="projects">
         <h2>Projects</h2>
