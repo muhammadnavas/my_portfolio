@@ -1,3 +1,9 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
 
 .achievements-title {
   text-align: center;
@@ -13,26 +19,45 @@
 .achievement-card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  padding: 1.5rem;
+  box-shadow: 0 8px 30px rgba(16,24,40,0.08);
+  padding: 1.25rem 1.5rem;
   display: flex;
   align-items: center;
   min-width: 320px;
-  max-width: 420px;
-  transition: box-shadow 0.2s;
+  max-width: 640px; /* allow wider cards to match screenshot */
+  transition: box-shadow 0.2s, transform 0.12s;
+  height: 140px; /* consistent card height */
 }
 .achievement-card:hover {
   box-shadow: 0 8px 24px rgba(0,0,0,0.16);
 }
-.certificate-img {
-  width: 120px;
-  height: auto;
-  margin-right: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+.achievement-icon {
+  font-size: 1.4rem;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.25rem;
+  border-radius: 9999px; /* circular */
+  background: linear-gradient(90deg, #831843, #f472b6);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.08);
 }
+.trophy-icon i { font-size: 1.25rem; }
 .achievement-details {
   flex: 1;
+}
+
+.achievement-details h3 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.15rem;
+  color: #0f172a;
+}
+.achievement-details p {
+  margin: 0;
+  color: #475569; /* subtle gray */
+  line-height: 1.4;
 }
 .leetcode-card {
   background: linear-gradient(90deg, #f7b267 0%, #f4845f 100%);
@@ -40,9 +65,29 @@
   position: relative;
 }
 .leetcode-icon {
-  font-size: 3rem;
-  margin-right: 1.5rem;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 60px !important; /* Circular width */
+  height: 60px !important; /* Circular height */
+  border-radius: 50% !important; /* Ensures circular shape */
+  background: linear-gradient(90deg, #ff7a18, #ffb03a) !important; /* Gradient background */
+  color: white !important;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  margin: auto !important; /* Centers the circle within its container */
+  padding: 0 !important; /* Removes any extra spacing */
+  line-height: 60px !important; /* Ensures text is vertically centered */
+  text-align: center !important; /* Ensures text is horizontally centered */
+  position: relative !important; /* Ensures proper placement */
 }
 #achievements {
   margin: 3rem 0;
+}
+
+/* responsive: make the two columns stack on small screens */
+@media (max-width: 768px) {
+  .achievement-card { width: 100%; height: auto; padding: 1rem; }
+  .grid { flex-direction: column; gap: 1rem; }
 }

@@ -6,6 +6,40 @@ mobileMenuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
 });
 
+// Theme switcher (background alternatives)
+const APPLY_THEME_KEY = 'siteTheme';
+
+function applyTheme(themeName) {
+    if (!themeName) return;
+    document.body.classList.remove('theme-pink','theme-blue','theme-dark','theme-soft');
+    document.body.classList.add(themeName);
+}
+
+function saveTheme(themeName) {
+    try { localStorage.setItem(APPLY_THEME_KEY, themeName); } catch(e) { /* ignore */ }
+}
+
+// clickable buttons (desktop + mobile)
+function initThemeButtons() {
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const theme = btn.getAttribute('data-theme');
+            applyTheme(theme);
+            saveTheme(theme);
+        });
+    });
+
+    document.querySelectorAll('.mobile-theme-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const theme = btn.getAttribute('data-theme');
+            applyTheme(theme);
+            saveTheme(theme);
+            // hide mobile menu after selecting
+            if (mobileMenu) mobileMenu.classList.add('hidden');
+        });
+    });
+}
+
 // Smooth Scrolling for Navigation Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -228,6 +262,12 @@ function animateSkillBars() {
 
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // load saved theme first (so background doesn't flash)
+    const saved = (function(){ try { return localStorage.getItem(APPLY_THEME_KEY); } catch(e){return null;} })();
+    if (saved) applyTheme(saved); // apply stored theme on load
+    // initialize theme buttons
+    initThemeButtons();
+
     renderProjects();
     initAnimations();
     typeEffect();

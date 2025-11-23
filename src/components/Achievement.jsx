@@ -1,13 +1,13 @@
 import './Achievement.css';
-// Update the import to use the correct certificate image file. If the file is not present, use profile.jpg as a placeholder.
-import CertificateImg from './assets/profile.jpg';
 
 const Achievement = () => (
   <section id="achievements">
     <h2 className="achievements-title">Achievements</h2>
-    <div className="achievements-list">
-      <div className="achievement-card">
-        <img src={CertificateImg} alt="Traffic Tech Ideathon Certificate" className="certificate-img" />
+    <div className="grid">
+      <div className="achievement-card card-hover">
+        <div className="achievement-icon trophy-icon">
+          <i className="fas fa-trophy" aria-hidden="true"></i>
+        </div>
         <div className="achievement-details">
           <h3>2nd Prize - Traffic Tech Ideathon 2025</h3>
           <p>
@@ -15,8 +15,8 @@ const Achievement = () => (
           </p>
         </div>
       </div>
-      <div className="achievement-card leetcode-card">
-        <div className="leetcode-icon">🟧</div>
+      <div className="achievement-card leetcode-card card-hover">
+        <div className="leetcode-icon">130+</div>
         <div className="achievement-details">
           <h3>LeetCode</h3>
           <p>Solved <strong>130+</strong> LeetCode problems, demonstrating strong problem-solving and algorithmic skills.</p>
