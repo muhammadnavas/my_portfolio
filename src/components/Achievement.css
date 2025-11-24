@@ -68,17 +68,17 @@
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  width: 60px !important; /* Circular width */
-  height: 60px !important; /* Circular height */
+  width: 64px !important; /* Slightly larger for better visibility */
+  height: 64px !important; /* Matches width for perfect circle */
   border-radius: 50% !important; /* Ensures circular shape */
   background: linear-gradient(90deg, #ff7a18, #ffb03a) !important; /* Gradient background */
   color: white !important;
-  font-size: 1.2rem !important;
+  font-size: 1.4rem !important; /* Increased font size for clarity */
   font-weight: bold !important;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important; /* Enhanced shadow for depth */
   margin: auto !important; /* Centers the circle within its container */
   padding: 0 !important; /* Removes any extra spacing */
-  line-height: 60px !important; /* Ensures text is vertically centered */
+  line-height: 64px !important; /* Ensures text is vertically centered */
   text-align: center !important; /* Ensures text is horizontally centered */
   position: relative !important; /* Ensures proper placement */
 }
@@ -90,4 +90,14 @@
 @media (max-width: 768px) {
   .achievement-card { width: 100%; height: auto; padding: 1rem; }
   .grid { flex-direction: column; gap: 1rem; }
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .leetcode-icon {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 1.2rem !important;
+    line-height: 56px !important;
+  }
 }
