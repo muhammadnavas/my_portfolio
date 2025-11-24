@@ -65,22 +65,22 @@
   position: relative;
 }
 .leetcode-icon {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  width: 64px !important; /* Slightly larger for better visibility */
-  height: 64px !important; /* Matches width for perfect circle */
-  border-radius: 50% !important; /* Ensures circular shape */
-  background: linear-gradient(90deg, #ff7a18, #ffb03a) !important; /* Gradient background */
-  color: white !important;
-  font-size: 1.4rem !important; /* Increased font size for clarity */
-  font-weight: bold !important;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15) !important; /* Enhanced shadow for depth */
-  margin: auto !important; /* Centers the circle within its container */
-  padding: 0 !important; /* Removes any extra spacing */
-  line-height: 64px !important; /* Ensures text is vertically centered */
-  text-align: center !important; /* Ensures text is horizontally centered */
-  position: relative !important; /* Ensures proper placement */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px; /* Slightly larger for visibility */
+  height: 72px; /* Keeps width and height equal for a perfect circle */
+  border-radius: 50%;
+  background: linear-gradient(90deg, #ff7a18, #ffb03a);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+  margin-right: 1.25rem; /* keep spacing consistent with other icons */
+  padding: 0;
+  line-height: normal;
+  text-align: center;
+  flex-shrink: 0; /* prevent shrinking on small widths */
 }
 #achievements {
   margin: 3rem 0;
@@ -95,9 +95,8 @@
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .leetcode-icon {
-    width: 56px !important;
-    height: 56px !important;
-    font-size: 1.2rem !important;
-    line-height: 56px !important;
+    width: 56px;
+    height: 56px;
+    font-size: 0.95rem;
   }
 }
