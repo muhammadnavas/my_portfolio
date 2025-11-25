@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,67 +9,133 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { 
+        body {
             font-family: 'Inter', sans-serif;
             min-height: 100vh;
         }
 
         /* Theme background variants */
-        .theme-pink { background: radial-gradient(ellipse at right, #831843, #be185d, #f472b6); }
-        .theme-blue { background: radial-gradient(ellipse at right, #0f172a, #0ea5e9, #60a5fa); }
-        .theme-dark { background: linear-gradient(180deg,#0b1020,#111827); }
-        .theme-soft { background: linear-gradient(180deg,#fff7f9,#fff1f3); }
+        .theme-pink {
+            background: radial-gradient(ellipse at right, #831843, #be185d, #f472b6);
+        }
+
+        .theme-blue {
+            background: radial-gradient(ellipse at right, #0f172a, #0ea5e9, #60a5fa);
+        }
+
+        .theme-dark {
+            background: linear-gradient(180deg, #0b1020, #111827);
+        }
+
+        .theme-soft {
+            background: linear-gradient(180deg, #fff7f9, #fff1f3);
+        }
+
         .gradient-bg {
             background: radial-gradient(ellipse at right, #831843, #be185d, #f472b6);
         }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
         .section-overlay {
             background: rgba(255, 255, 255, 0.95);
         }
+
         /* Theme selector button visuals */
-        .theme-btn[data-theme="theme-pink"] { background: linear-gradient(90deg,#831843,#f472b6); }
-        .theme-btn[data-theme="theme-blue"] { background: linear-gradient(90deg,#0f172a,#60a5fa); }
-        .theme-btn[data-theme="theme-dark"] { background: linear-gradient(90deg,#111827,#374151); }
-        .theme-btn[data-theme="theme-soft"] { background: linear-gradient(90deg,#fff7f9,#fff1f3); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06); }
-        .theme-btn:focus { outline: 2px solid rgba(255,255,255,0.12); }
-        .mobile-theme-btn[data-theme="theme-pink"] { background: linear-gradient(90deg,#831843,#f472b6); }
-        .mobile-theme-btn[data-theme="theme-blue"] { background: linear-gradient(90deg,#0f172a,#60a5fa); }
-        .mobile-theme-btn[data-theme="theme-dark"] { background: linear-gradient(90deg,#111827,#374151); }
-        .mobile-theme-btn[data-theme="theme-soft"] { background: linear-gradient(90deg,#fff7f9,#fff1f3); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06); }
-        
+        .theme-btn[data-theme="theme-pink"] {
+            background: linear-gradient(90deg, #831843, #f472b6);
+        }
+
+        .theme-btn[data-theme="theme-blue"] {
+            background: linear-gradient(90deg, #0f172a, #60a5fa);
+        }
+
+        .theme-btn[data-theme="theme-dark"] {
+            background: linear-gradient(90deg, #111827, #374151);
+        }
+
+        .theme-btn[data-theme="theme-soft"] {
+            background: linear-gradient(90deg, #fff7f9, #fff1f3);
+            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+        }
+
+        .theme-btn:focus {
+            outline: 2px solid rgba(255, 255, 255, 0.12);
+        }
+
+        .mobile-theme-btn[data-theme="theme-pink"] {
+            background: linear-gradient(90deg, #831843, #f472b6);
+        }
+
+        .mobile-theme-btn[data-theme="theme-blue"] {
+            background: linear-gradient(90deg, #0f172a, #60a5fa);
+        }
+
+        .mobile-theme-btn[data-theme="theme-dark"] {
+            background: linear-gradient(90deg, #111827, #374151);
+        }
+
+        .mobile-theme-btn[data-theme="theme-soft"] {
+            background: linear-gradient(90deg, #fff7f9, #fff1f3);
+            box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+        }
+
         /* Typing Animation Styles */
         .typing-name {
             display: inline-block;
         }
+
         .typing-text {
             display: inline-block;
         }
+
         .typing-cursor {
             display: inline-block;
             margin-left: 0.25rem;
             animation: blink 0.7s infinite;
         }
+
         @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
+
+            0%,
+            50% {
+                opacity: 1;
+            }
+
+            51%,
+            100% {
+                opacity: 0;
+            }
         }
     </style>
 </head>
+
 <body class="theme-pink">
     <!-- Navigation -->
     <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-6">
-                <div class="text-2xl font-bold typing-name bg-gradient-to-r from-[#831843] to-[#f472b6] bg-clip-text text-transparent"></div>
+                <div
+                    class="text-2xl font-bold typing-name bg-gradient-to-r from-[#831843] to-[#f472b6] bg-clip-text text-transparent">
+                </div>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#home" class="text-gray-600 hover:text-[#be185d] transition-colors">Home</a>
                     <a href="#about" class="text-gray-600 hover:text-[#be185d] transition-colors">About</a>
                     <a href="#projects" class="text-gray-600 hover:text-[#be185d] transition-colors">Projects</a>
-                    <a href="#achievements" class="text-gray-600 hover:text-[#be185d] transition-colors">Achievements</a>
+                    <a href="#achievements"
+                        class="text-gray-600 hover:text-[#be185d] transition-colors">Achievements</a>
                     <a href="#skills" class="text-gray-600 hover:text-[#be185d] transition-colors">Skills</a>
-                    <a href="#competitions" class="text-gray-600 hover:text-[#be185d] transition-colors">Competitions</a>
-                    <a href="#certifications" class="text-gray-600 hover:text-[#be185d] transition-colors">Certifications</a>
+                    <a href="#competitions"
+                        class="text-gray-600 hover:text-[#be185d] transition-colors">Competitions</a>
+                    <a href="#certifications"
+                        class="text-gray-600 hover:text-[#be185d] transition-colors">Certifications</a>
                     <a href="#coding" class="text-gray-600 hover:text-[#be185d] transition-colors">Coding Status</a>
                     <a href="#contact" class="text-gray-600 hover:text-[#be185d] transition-colors">Contact</a>
                 </div>
@@ -93,55 +160,57 @@
                 <a href="#contact" class="block py-2 text-gray-600 hover:text-[#be185d]">Contact</a>
             </div>
         </div>
-    </nav>          
+    </nav>
 
     <!-- Hero Section -->
     <section id="home" class="gradient-bg text-white py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-12"><!-- Profile Image on the Left -->
-<div class="mb-8 md:mb-0 flex-shrink-0 relative">
-    <div class="w-64 h-80 md:w-72 md:h-96 rounded-3xl overflow-hidden border-4 border-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-2xl transform scale-105 transition-transform duration-300 hover:scale-115">
-        <img src="./src/assets/profile.jpg" alt="Muhammad Navas"
-             class="w-full h-full object-cover">
-    </div>
-</div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center md:items-start md:space-x-12">
+                <!-- Profile Image on the Left -->
+                <div class="mb-8 md:mb-0 flex-shrink-0 relative">
+                    <div
+                        class="w-64 h-80 md:w-72 md:h-96 rounded-3xl overflow-hidden border-4 border-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-2xl transform scale-105 transition-transform duration-300 hover:scale-115">
+                        <img src="./src/assets/profile.jpg" alt="Muhammad Navas" class="w-full h-full object-cover">
+                    </div>
+                </div>
 
 
-            <!-- Text and Buttons on the Right -->
-            <div class="text-center md:text-left">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4">Muhammad Navas</h1>
-                <p class="text-xl md:text-2xl mb-6 opacity-90">
-                    Innovative AI & ML Student
-                </p>
-                <p class="text-lg mb-8 opacity-80 max-w-xl">
-                    Building Scalable, Intelligent Systems to Create Real-World Impact
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="https://github.com/muhammadnavas" target="_blank"
-                       class="inline-flex items-center px-5 py-2 bg-white/95 text-gray-800 rounded-full font-medium shadow-md hover:bg-gray-100 transition-all duration-200">
-                        <i class="fab fa-github mr-2"></i>GitHub
-                    </a>
-                    <a href="https://linkedin.com/in/muhammadnavas" target="_blank"
-                       class="inline-flex items-center px-5 py-2 bg-gradient-to-r from-[#831843] to-[#f472b6] text-white rounded-full font-medium shadow-md hover:bg-pink-500 transition-all duration-200">
-                        <i class="fab fa-linkedin mr-2"></i>LinkedIn
-                    </a>
-                    <a href="https://drive.google.com/file/d/1IBh79_-krUo_aRFdPMELua2Ro_hKu6_N/view?usp=sharing" target="_blank"
-                       class="inline-flex items-center px-5 py-2 bg-white/95 text-gray-800 rounded-full font-medium shadow-md hover:bg-gray-100 transition-all duration-200">
-                        <i class="fas fa-file mr-2"></i>Resume
-                    </a>
-                    <a href="https://leetcode.com/u/MuhammadNavas/" target="_blank"
-                        class="inline-flex items-center px-5 py-2 bg-[#FFA116] text-white rounded-full font-medium shadow-md hover:bg-[#ff8c00] transition-all duration-200">
-                        <i class="fas fa-code mr-2"></i>LeetCode
-                    </a>
-                    <a href="#contact" 
-                        class="inline-flex items-center px-5 py-2 bg-white/95 text-gray-800 rounded-full font-medium shadow-md hover:bg-gray-100 transition-all duration-200">
-                        <i class="fas fa-briefcase mr-2"></i>Hire Me
-                    </a>
+                <!-- Text and Buttons on the Right -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Muhammad Navas</h1>
+                    <p class="text-xl md:text-2xl mb-6 opacity-90">
+                        Innovative AI & ML Student
+                    </p>
+                    <p class="text-lg mb-8 opacity-80 max-w-xl">
+                        Building Scalable, Intelligent Systems to Create Real-World Impact
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://github.com/muhammadnavas" target="_blank"
+                            class="inline-flex items-center px-5 py-2 bg-white/95 text-gray-800 rounded-full font-medium shadow-md hover:bg-gray-100 transition-all duration-200">
+                            <i class="fab fa-github mr-2"></i>GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/muhammadnavas" target="_blank"
+                            class="inline-flex items-center px-5 py-2 bg-gradient-to-r from-[#831843] to-[#f472b6] text-white rounded-full font-medium shadow-md hover:bg-pink-500 transition-all duration-200">
+                            <i class="fab fa-linkedin mr-2"></i>LinkedIn
+                        </a>
+                        <a href="https://drive.google.com/file/d/1IBh79_-krUo_aRFdPMELua2Ro_hKu6_N/view?usp=sharing"
+                            target="_blank"
+                            class="inline-flex items-center px-5 py-2 bg-white/95 text-gray-800 rounded-full font-medium shadow-md hover:bg-gray-100 transition-all duration-200">
+                            <i class="fas fa-file mr-2"></i>Resume
+                        </a>
+                        <a href="https://leetcode.com/u/MuhammadNavas/" target="_blank"
+                            class="inline-flex items-center px-5 py-2 bg-[#FFA116] text-white rounded-full font-medium shadow-md hover:bg-[#ff8c00] transition-all duration-200">
+                            <i class="fas fa-code mr-2"></i>LeetCode
+                        </a>
+                        <a href="#contact"
+                            class="inline-flex items-center px-5 py-2 bg-white/95 text-gray-800 rounded-full font-medium shadow-md hover:bg-gray-100 transition-all duration-200">
+                            <i class="fas fa-briefcase mr-2"></i>Hire Me
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- About Section -->
@@ -157,13 +226,13 @@
                         Passionate AI/ML Developer
                     </h3>
                     <p class="text-gray-600 mb-6 leading-relaxed">
-                        I'm a Computer Science student specializing in AI & ML at CMR Institute of Technology, 
-                        Bangalore, with a strong 9.44 CGPA. I'm passionate about building intelligent systems 
+                        I'm a Computer Science student specializing in AI & ML at CMR Institute of Technology,
+                        Bangalore, with a strong 9.44 CGPA. I'm passionate about building intelligent systems
                         that solve real-world problems and create meaningful impact.
                     </p>
                     <p class="text-gray-600 mb-6 leading-relaxed">
-                        My expertise spans across full-stack development, machine learning, and IoT systems. 
-                        I've successfully built projects serving 1000+ users and participated in multiple 
+                        My expertise spans across full-stack development, machine learning, and IoT systems.
+                        I've successfully built projects serving 1000+ users and participated in multiple
                         hackathons, always striving to learn and implement cutting-edge technologies.
                     </p>
                 </div>
@@ -190,7 +259,7 @@
         </div>
     </section>
 
-    
+
 
     <!-- Achievements Section (moved below Projects) -->
 
@@ -218,21 +287,26 @@
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Certificate Card (icon-only) -->
                 <div class="bg-white/80 p-6 rounded-lg shadow-md card-hover flex items-start gap-6">
-                    <div class="flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-r from-[#831843] to-[#f472b6] text-white flex items-center justify-center text-2xl">
+                    <div
+                        class="flex-shrink-0 w-14 h-14 rounded-full bg-gradient-to-r from-[#831843] to-[#f472b6] text-white flex items-center justify-center text-2xl">
                         <i class="fas fa-trophy"></i>
                     </div>
                     <div>
                         <h4 class="text-xl font-semibold text-gray-800">2nd Prize — Traffic Tech Ideathon 2025</h4>
-                        <p class="text-gray-600 mt-2">Awarded 2nd Prize at the Traffic Tech Ideathon 2025 organized by the Equal Opportunity Cell, CMR Institute of Technology, Bengaluru (12th Nov 2025).</p>
+                        <p class="text-gray-600 mt-2">Awarded 2nd Prize at the Traffic Tech Ideathon 2025 organized by
+                            the Equal Opportunity Cell, CMR Institute of Technology, Bengaluru (12th Nov 2025).</p>
                     </div>
                 </div>
 
                 <!-- LeetCode Card -->
-                <div class="bg-white/80 p-6 rounded-lg shadow-md card-hover flex items-center gap-6">
-                        <div class="w-20 h-28 rounded-full flex items-center justify-center bg-gradient-to-r from-[#F59E0B] to-[#FB923C] text-white font-extrabold" style="font-size:1.15rem; letter-spacing:-0.5px; text-align:center; line-height:1;">130+</div>
+                <div class="bg-white/80 p-6 rounded-lg shadow-md card-hover flex items-start gap-6">
+                    <div
+                        class="flex-shrink-0 w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-r from-[#F59E0B] to-[#FB923C] text-white font-extrabold text-xl shadow-lg">
+                        130+</div>
                     <div>
                         <h4 class="text-xl font-semibold text-gray-800">LeetCode</h4>
-                        <p class="text-gray-600 mt-2">Solved <strong>130+</strong> problems on LeetCode — strong algorithmic problem solving and competitive programming experience.</p>
+                        <p class="text-gray-600 mt-2">Solved <strong>130+</strong> problems on LeetCode — strong
+                            algorithmic problem solving and competitive programming experience.</p>
                     </div>
                 </div>
             </div>
@@ -322,7 +396,8 @@
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Agentic AI</span>
                         <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Quick Learner</span>
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Problem Solving</span>
+                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Problem
+                            Solving</span>
                     </div>
                 </div>
                 <div class="bg-white/80 p-6 rounded-lg card-hover">
@@ -347,7 +422,7 @@
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">CO-CURRICULAR & EXTRA-CURRICULAR ACTIVITIES</h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-[#831843] to-[#f472b6] mx-auto"></div>
             </div>
-            
+
             <!-- Hackathons & Competitions -->
             <div class="mb-12">
                 <h3 class="text-2xl font-semibold text-gray-800 mb-8 text-center">
@@ -366,25 +441,28 @@
                             </div>
                         </div>
                         <p class="text-gray-600">
-                            Participated in Social Hackathon focusing on developing innovative solutions for social impact and community development.
+                            Participated in Social Hackathon focusing on developing innovative solutions for social
+                            impact and community development.
                         </p>
                     </div>
-                    
+
                     <div class="bg-white/95 p-6 rounded-lg shadow-md card-hover">
                         <div class="flex items-center mb-4">
                             <div class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white p-3 rounded-full mr-4">
                                 <i class="fas fa-laptop-code text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="text-xl font-semibold text-gray-800">Competitive Programming Hackathon 2024</h4>
+                                <h4 class="text-xl font-semibold text-gray-800">Competitive Programming Hackathon 2024
+                                </h4>
                                 <p class="text-gray-600">CMR Institute of Technology</p>
                             </div>
                         </div>
                         <p class="text-gray-600">
-                            Competed in Competitive Programming Hackathon, demonstrating algorithmic problem-solving skills and coding proficiency.
+                            Competed in Competitive Programming Hackathon, demonstrating algorithmic problem-solving
+                            skills and coding proficiency.
                         </p>
                     </div>
-                    
+
                     <div class="bg-white/95 p-6 rounded-lg shadow-md card-hover">
                         <div class="flex items-center mb-4">
                             <div class="bg-gradient-to-r from-green-500 to-teal-500 text-white p-3 rounded-full mr-4">
@@ -396,10 +474,11 @@
                             </div>
                         </div>
                         <p class="text-gray-600">
-                            Participated in FullStack Fiesta, showcasing full-stack development skills and modern web technologies.
+                            Participated in FullStack Fiesta, showcasing full-stack development skills and modern web
+                            technologies.
                         </p>
                     </div>
-                    
+
                     <div class="bg-white/95 p-6 rounded-lg shadow-md card-hover">
                         <div class="flex items-center mb-4">
                             <div class="bg-gradient-to-r from-orange-500 to-red-500 text-white p-3 rounded-full mr-4">
@@ -411,7 +490,9 @@
                             </div>
                         </div>
                         <p class="text-gray-600">
-                            Served as technical team member for 1 year and 3 months, contributing to Machine Learning and AI projects. Coordinated CULTURA'25 — GLITCH HACKERS coding challenge event and organized Git & GitHub workshop on version control.
+                            Served as technical team member for 1 year and 3 months, contributing to Machine Learning
+                            and AI projects. Coordinated CULTURA'25 — GLITCH HACKERS coding challenge event and
+                            organized Git & GitHub workshop on version control.
                         </p>
                     </div>
                 </div>
@@ -426,7 +507,7 @@
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Certifications</h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-[#831843] to-[#f472b6] mx-auto"></div>
             </div>
-            
+
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white/80 p-6 rounded-lg shadow-md card-hover">
                     <div class="flex items-center mb-4">
@@ -439,10 +520,11 @@
                         </div>
                     </div>
                     <p class="text-gray-600">
-                        Comprehensive certification covering SQL fundamentals, data analysis techniques, and database management for data science applications.
+                        Comprehensive certification covering SQL fundamentals, data analysis techniques, and database
+                        management for data science applications.
                     </p>
                 </div>
-                
+
                 <div class="bg-white/80 p-6 rounded-lg shadow-md card-hover">
                     <div class="flex items-center mb-4">
                         <div class="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-3 rounded-full mr-4">
@@ -454,7 +536,8 @@
                         </div>
                     </div>
                     <p class="text-gray-600">
-                        Advanced certification in Generative AI technologies, covering LLMs, prompt engineering, and practical applications of AI systems.
+                        Advanced certification in Generative AI technologies, covering LLMs, prompt engineering, and
+                        practical applications of AI systems.
                     </p>
                 </div>
             </div>
@@ -462,46 +545,46 @@
     </section>
 
     <!-- Coding Profiles Section -->
-<section id="coding" class="py-20 bg-white/80">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-    <h2 class="text-3xl font-bold text-gray-800 mb-4">Coding Profiles</h2>
-    <div class="w-20 h-1 bg-gradient-to-r from-[#831843] to-[#f472b6] mx-auto mb-8"></div>
+    <section id="coding" class="py-20 bg-white/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Coding Profiles</h2>
+            <div class="w-20 h-1 bg-gradient-to-r from-[#831843] to-[#f472b6] mx-auto mb-8"></div>
 
-    <!-- Grid for GitHub + LeetCode -->
-    <div class="grid md:grid-cols-2 gap-8">
-      
-      <!-- GitHub Stats (Stacked Cards) -->
-      <div class="space-y-4">
-        <a href="https://github.com/muhammadnavas" target="_blank">
-          <img src="https://github-readme-stats.vercel.app/api?username=muhammadnavas&show_icons=true&theme=tokyonight" 
-               alt="GitHub Stats" class="rounded-lg shadow-md w-full">
-        </a>
-        <a href="https://github.com/muhammadnavas" target="_blank">
-          <img src="https://github-readme-streak-stats-eight.vercel.app?user=muhammadnavas&show_icons=true&theme=tokyonight"
-               alt="GitHub Streak" class="rounded-lg shadow-md w-full">
-        </a>
-      </div>
+            <!-- Grid for GitHub + LeetCode -->
+            <div class="grid md:grid-cols-2 gap-8">
 
-      <div class="flex flex-col space-y-4">
-    <a href="https://leetcode.com/u/MuhammadNavas/" target="_blank">
-      <img src="https://leetcard.jacoblin.cool/MuhammadNavas?theme=dark&font=Inter&ext=heatmap" 
-           alt="LeetCode Stats" class="rounded-lg shadow-md w-full h-auto">
-    </a>
-    <div class="grid grid-cols-2 gap-4">
-  <!-- Problems Solved Card -->
-  <div class="project-card p-6 rounded-xl text-center bg-gray-800 shadow-lg">
-    <div class="text-2xl font-bold text-yellow-400 mb-2">150+</div>
-    <div class="text-sm text-gray-300">Problems Solved</div>
-  </div>
-  <!-- Languages Card -->
-  <div class="project-card p-6 rounded-xl text-center bg-gray-800 shadow-lg">
-    <div class="text-2xl font-bold text-green-400 mb-2">5+</div>
-    <div class="text-sm text-gray-300">Languages</div>
-  </div>
-</div>
-  
-  </div>
-</section>
+                <!-- GitHub Stats (Stacked Cards) -->
+                <div class="space-y-4">
+                    <a href="https://github.com/muhammadnavas" target="_blank">
+                        <img src="https://github-readme-stats.vercel.app/api?username=muhammadnavas&show_icons=true&theme=tokyonight"
+                            alt="GitHub Stats" class="rounded-lg shadow-md w-full">
+                    </a>
+                    <a href="https://github.com/muhammadnavas" target="_blank">
+                        <img src="https://github-readme-streak-stats-eight.vercel.app?user=muhammadnavas&show_icons=true&theme=tokyonight"
+                            alt="GitHub Streak" class="rounded-lg shadow-md w-full">
+                    </a>
+                </div>
+
+                <div class="flex flex-col space-y-4">
+                    <a href="https://leetcode.com/u/MuhammadNavas/" target="_blank">
+                        <img src="https://leetcard.jacoblin.cool/MuhammadNavas?theme=dark&font=Inter&ext=heatmap"
+                            alt="LeetCode Stats" class="rounded-lg shadow-md w-full h-auto">
+                    </a>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Problems Solved Card -->
+                        <div class="project-card p-6 rounded-xl text-center bg-gray-800 shadow-lg">
+                            <div class="text-2xl font-bold text-yellow-400 mb-2">150+</div>
+                            <div class="text-sm text-gray-300">Problems Solved</div>
+                        </div>
+                        <!-- Languages Card -->
+                        <div class="project-card p-6 rounded-xl text-center bg-gray-800 shadow-lg">
+                            <div class="text-2xl font-bold text-green-400 mb-2">5+</div>
+                            <div class="text-sm text-gray-300">Languages</div>
+                        </div>
+                    </div>
+
+                </div>
+    </section>
 
 
 
@@ -512,7 +595,7 @@
                 <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-[#831843] to-[#f472b6] mx-auto"></div>
                 <p class="text-gray-300 mt-4 max-w-2xl mx-auto">
-                    I'm always open to discussing new opportunities, interesting projects, 
+                    I'm always open to discussing new opportunities, interesting projects,
                     just having a conversation about technology and AI.
                 </p>
             </div>
@@ -522,8 +605,7 @@
                         <i class="fas fa-envelope"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-2">Email</h3>
-                    <a href="mailto:navasns0409@gmail.com" 
-                       class="text-gray-300 hover:text-white transition-colors">
+                    <a href="mailto:navasns0409@gmail.com" class="text-gray-300 hover:text-white transition-colors">
                         navasns0409@gmail.com
                     </a>
                 </div>
@@ -533,7 +615,7 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-2">GitHub</h3>
                     <a href="https://github.com/muhammadnavas" target="_blank"
-                       class="text-gray-300 hover:text-white transition-colors">
+                        class="text-gray-300 hover:text-white transition-colors">
                         github.com/muhammadnavas
                     </a>
                 </div>
@@ -543,7 +625,7 @@
                     </div>
                     <h3 class="text-xl font-semibold mb-2">LinkedIn</h3>
                     <a href="https://linkedin.com/in/muhammadnavas" target="_blank"
-                       class="text-gray-300 hover:text-white transition-colors">
+                        class="text-gray-300 hover:text-white transition-colors">
                         linkedin.com/in/muhammadnavas
                     </a>
                 </div>
@@ -561,4 +643,5 @@
     <script type="module" src="/src/typing-animation.js"></script>
     <script type="module" src="/src/script.js"></script>
 </body>
+
 </html>
