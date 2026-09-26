@@ -60,56 +60,38 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const projects = [
     {
         title: "Notezy.online - Student Resource Hub",
-        description: "MERN-based web portal for sharing VTU notes and study materials with categorized uploads, serving 5000+ active students.",
-        technologies: ["JavaScript", "MERN", "MongoDB", "Google Cloud", "Gemini LLM"],
+        description: "Designed and developed a full-stack MERN application serving 5,000+ active users. Built REST APIs for uploading, retrieving, and managing 1,000+ academic resources, using Google Drive API for scalable cloud storage and efficient file management.",
+        technologies: ["MERN Stack", "Google Drive", "Gemini LLM", "REST API"],
         icon: "fas fa-graduation-cap",
         color: "blue",
         github: "",
         website: "https://notezy.online"
     },
     {
-        title: "MazeScape",
-        description: "MazeScape is a high-speed maze escape challenge with procedurally generated levels and relentless AI ghosts using the A* pathfinding algorithm.",
-        technologies: ["A* Algorithm", "AI", "Gaming", "NodeJS","Path Finding"],
-        icon: "fas fa-gamepad",
+        title: "AI Technical Interviewer",
+        description: "Developed a microservices-based technical hiring platform using the MERN Stack, with ML-based code analysis, AI-powered coding tests, an interview scheduler, and an AI interviewer for technical screening.",
+        technologies: ["MERN", "Python", "LLMs", "REST API"],
+        icon: "fas fa-user-tie",
         color: "red",
-        github: "https://github.com/muhammadnavas/MazeScape.git",
-        website: "https://maze-scape.vercel.app/"
+        github: "",
+        website: ""
     },
     {
-        title: "RAG-Enhanced Fake News Predictor",
-        description: "RAG-Enhanced Fake News Predictor analyzes news content using multi-API verification, AI assessment, and machine learning models.",
-        technologies: ["Python", "Machine Learning", "NLP", "Data Analysis","RAG","AI"],
+        title: "Fake News Predictor",
+        description: "Developed a fake news detection system using machine learning for news classification. Integrated multiple fact-checking and news APIs to verify content authenticity and designed a real-time news validation pipeline providing authenticity scores and insights.",
+        technologies: ["Python", "Streamlit", "APIs", "Machine Learning", "Gemini LLM", "NLP"],
         icon: "fas fa-search",
         color: "yellow",
         github: "https://github.com/muhammadnavas/Fake_News_Predictor.git",
         website: "https://fakenews-predictor.streamlit.app/"
     },
     {
-        title: "PetRakshak - Animal Rescue Platform",
-        description: "Comprehensive animal rescue app with geolocation, volunteer coordination, and rescue tracking features.",
-        technologies: ["JavaScript", "MERN", "MongoDB"],
-        icon: "fas fa-paw",
+        title: "LinkUp - Coding Challenge & Talent Discovery Platform",
+        description: "Built a full-stack platform connecting students and companies through coding challenges. Developed role-based dashboards for students and recruiters and implemented challenge creation, code submission, and solution review workflows.",
+        technologies: ["React", "Node.js", "Express", "MongoDB", "TailwindCSS"],
+        icon: "fas fa-code",
         color: "green",
-        github: "https://github.com/muhammadnavas/PetRakshak.git",
-        website: ""
-    },
-    {
-        title: "Face Recognition Attendance System",
-        description: "Automated attendance system using machine learning and OpenCV for real-time facial recognition.",
-        technologies: ["Python", "Flask", "OpenCV", "REST API", "Machine Learning"],
-        icon: "fas fa-camera",
-        color: "purple",
-        github: "https://github.com/muhammadnavas/Face_Recognition_Attendance_System.git",
-        website: ""
-    },
-    {
-        title: "AI-Based NLP to SQL Converter",
-        description: "Advanced system that converts natural language queries into SQL commands using NLP techniques.",
-        technologies: ["Python", "NLP", "SQL", "AI"],
-        icon: "fas fa-database",
-        color: "indigo",
-        github: "https://github.com/muhammadnavas/AI_Schema_Selector.git",
+        github: "",
         website: ""
     }
 ];
