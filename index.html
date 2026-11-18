@@ -11,7 +11,8 @@
     <style>
         html {
             scroll-behavior: smooth;
-            overflow-x: hidden;
+            scroll-padding-top: 5rem;
+            overflow-x: clip;
             scrollbar-width: thin;
             scrollbar-color: #059669 #022218;
         }
@@ -19,9 +20,13 @@
         body {
             font-family: 'Inter', sans-serif;
             min-height: 100vh;
-            overflow-x: hidden;
+            overflow-x: clip;
             background-color: #f8faf9;
             color: #111827;
+        }
+
+        section {
+            scroll-margin-top: 5rem;
         }
 
         /* High-End Balanced Emerald & Jade Tech Theme */
@@ -92,9 +97,9 @@
     </style>
 </head>
 
-<body>
+<body class="pt-16 sm:pt-20">
     <!-- Navigation -->
-    <nav class="bg-white/90 backdrop-blur-md border-b border-emerald-100/90 shadow-xs sticky top-0 z-50">
+    <nav class="bg-white/95 backdrop-blur-md border-b border-emerald-100/90 shadow-sm fixed top-0 left-0 right-0 w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16 sm:h-20">
                 <!-- Brand -->
@@ -166,10 +171,7 @@
                 <!-- Text and Buttons on the Right -->
                 <div class="text-center md:text-left flex-1">
                     <!-- Status Pill -->
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/60 border border-emerald-400/30 text-emerald-200 text-xs sm:text-sm font-medium mb-4 backdrop-blur-md shadow-inner">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                        <span>Available for Opportunities</span>
-                    </div>
+
 
                     <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold mb-2 sm:mb-3 tracking-tight text-white drop-shadow-sm">
                         Muhammad Navas

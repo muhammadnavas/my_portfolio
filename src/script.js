@@ -15,13 +15,23 @@ if (mobileMenuBtn && mobileMenu) {
     });
 }
 
-// Smooth Scrolling
+// Smooth Scrolling with Fixed Header Offset
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        if (href === '#' || !href.startsWith('#')) return;
+        const target = document.querySelector(href);
         if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            e.preventDefault();
+            const nav = document.querySelector('nav');
+            const navHeight = nav ? nav.offsetHeight : 70;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navHeight;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
             if (mobileMenu) mobileMenu.classList.add('hidden');
         }
     });
