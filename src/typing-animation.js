@@ -32,18 +32,9 @@ class TextTypeAnimation {
       this.cursor.className = 'typing-cursor';
       this.cursor.textContent = this.cursorCharacter;
       this.element.appendChild(this.cursor);
-      this.blinkCursor();
     }
     
     this.type();
-  }
-  
-  blinkCursor() {
-    setInterval(() => {
-      if (this.cursor) {
-        this.cursor.style.opacity = this.cursor.style.opacity === '0' ? '1' : '0';
-      }
-    }, 500);
   }
   
   type() {
@@ -85,13 +76,13 @@ class TextTypeAnimation {
 
 // Initialize typing animation when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-  const headerName = document.querySelector('.typing-name');
-  if (headerName) {
-    new TextTypeAnimation(headerName, {
-      texts: ['Muhammad Navas', 'AI & ML Developer', 'Full-Stack Engineer'],
-      typingSpeed: 75,
-      deletingSpeed: 50,
-      pauseDuration: 1500,
+  const roleElement = document.querySelector('.typing-role');
+  if (roleElement) {
+    new TextTypeAnimation(roleElement, {
+      texts: ['Innovative AI & ML Student', 'Full-Stack Developer', 'AI Systems & Cloud Engineer'],
+      typingSpeed: 70,
+      deletingSpeed: 40,
+      pauseDuration: 1800,
       showCursor: true,
       cursorCharacter: '|',
       loop: true
